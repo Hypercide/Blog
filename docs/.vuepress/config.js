@@ -5,7 +5,6 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     themeConfig: {
-        repo: 'Hypercide/Blog',
         nav: [
           { text: '我的Github', link: 'https://github.com/Hypercide' },
         ],

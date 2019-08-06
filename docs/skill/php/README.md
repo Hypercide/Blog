@@ -24,3 +24,19 @@ CGI有个蛋疼的地方，就是每一次收到web请求都会有启动和退�
 2. 当直接杀死`PHP-CGI`进程时，php就不能运行了。
 
 然后到2004年，一个叫安德烈的人发明了PHP专用的`FastCGI`管理器：PHP-FPM，克服了上面2个问题。
+
+```js
+$.ajax({  
+        url:"",  
+        dataType:'jsonp',  
+        data:'',  
+        jsonp:'callback',  //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
+ 
+        success:function(result) {  
+            //成功的处理
+        },
+        error:function(){
+            //错误处理
+} 
+});  
+```

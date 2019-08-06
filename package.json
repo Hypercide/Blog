@@ -1,10 +1,14 @@
 {
   "devDependencies": {
+    "@vuepress/theme-blog": "^1.2.3",
     "vuepress": "^1.0.3"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.3"
   }
 }
