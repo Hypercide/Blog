@@ -41,4 +41,4 @@ $.ajax({
 });  
 ```
 
-测试 TRAVIS-CI
+测试 TRAVIS-CI啊
