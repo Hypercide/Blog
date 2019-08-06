@@ -1,14 +1,22 @@
 language: node_js
 node_js:
-  - lts/*
+- lts/*
 script:
-  - npm run docs:build
-  - npm run cname
+- npm run docs:build
+- npm run cname
 deploy:
   provider: pages
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: master
+before_install:
+- openssl aes-256-cbc -K $encrypted_cf3a83525f52_key -iv $encrypted_cf3a83525f52_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+addons:
+  ssh_known_hosts: 120.79.134.194
+after_success:
+- ssh root@120.79.134.194 'cd /www/wwwroot/blog && git pull'
