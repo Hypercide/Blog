@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/theme-blog": "^1.2.3",
     "vuepress": "^1.0.3"
   },

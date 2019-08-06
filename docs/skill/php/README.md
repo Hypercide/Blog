@@ -40,5 +40,3 @@ $.ajax({
 } 
 });  
 ```
-
-测试 TRAVIS-CI自动部署到centos 2
