@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redis | Hypercide</title>
+    <meta name="description" content="Hypercide个人博客,vuepress学习">
+    <link rel="icon" href="/favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.4e8eff33.css" as="style"><link rel="preload" href="/assets/js/app.7658f378.js" as="script"><link rel="preload" href="/assets/js/2.df635d3c.js" as="script"><link rel="preload" href="/assets/js/14.4d2275f7.js" as="script"><link rel="prefetch" href="/assets/js/10.d054bad5.js"><link rel="prefetch" href="/assets/js/11.dd17b887.js"><link rel="prefetch" href="/assets/js/12.ca3699e8.js"><link rel="prefetch" href="/assets/js/13.c622d27d.js"><link rel="prefetch" href="/assets/js/15.69cd1499.js"><link rel="prefetch" href="/assets/js/16.3b0718e9.js"><link rel="prefetch" href="/assets/js/3.a2338f17.js"><link rel="prefetch" href="/assets/js/4.ddfe4d65.js"><link rel="prefetch" href="/assets/js/5.08303a0e.js"><link rel="prefetch" href="/assets/js/6.b98a1d6c.js"><link rel="prefetch" href="/assets/js/7.bbd0046f.js"><link rel="prefetch" href="/assets/js/8.b3a8dc59.js"><link rel="prefetch" href="/assets/js/9.6e252222.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4e8eff33.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hypercide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/Hypercide" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/Hypercide" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">欢迎</a></li><li><a href="/about/" class="sidebar-link">关于我</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>技术笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/php/" class="sidebar-link">PHP</a></li><li><a href="/skill/JavaScript/" class="sidebar-link">JavaScript</a></li><li><a href="/skill/redis/" class="active sidebar-link">Redis</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill/redis/#redis与memcached" class="sidebar-link">Redis与Memcached</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#查询key" class="sidebar-link">查询key</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#字符串类型的相关命令" class="sidebar-link">字符串类型的相关命令</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#集合set的相关命令" class="sidebar-link">集合set的相关命令</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#有序集合order-set的相关命令" class="sidebar-link">有序集合order set的相关命令</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#链表list结构的相关命令" class="sidebar-link">链表list结构的相关命令</a></li><li class="sidebar-sub-header"><a href="/skill/redis/#哈希hash结构的相关命令" class="sidebar-link">哈希hash结构的相关命令</a></li></ul></li><li><a href="/skill/mysql/" class="sidebar-link">MySQL</a></li><li><a href="/skill/sort/" class="sidebar-link">排序算法</a></li><li><a href="/skill/computertheory/" class="sidebar-link">计算机原理</a></li><li><a href="/skill/network/" class="sidebar-link">计算机网络</a></li><li><a href="/skill/hc&amp;ha/" class="sidebar-link">高并发与高可用</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>生活</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redis"><a href="#redis" aria-hidden="true" class="header-anchor">#</a> Redis</h1> <h2 id="redis与memcached"><a href="#redis与memcached" aria-hidden="true" class="header-anchor">#</a> Redis与Memcached</h2> <ol><li><code>Redis</code>可以用来做存储<code>(storge)</code>, 而<code>Memcached</code>是用来做缓存<code>(cache)</code>，这个特点主要因为其有”持久化”的功能.</li> <li>存储的数据类型不同,对于<code>Memcached</code>来说,存储的数据,只有1种类型<code>key-value</code>字符串,而<code>Redis</code>则可以存储<code>字符串</code>,<code>链表</code>,<code>哈希结构</code>,<code>集合</code>,<code>有序集合</code>.</li></ol> <h2 id="查询key"><a href="#查询key" aria-hidden="true" class="header-anchor">#</a> 查询key</h2> <p>在Redis里,允许模糊查询<code>key</code>,
+有3个通配符 <code>*</code>, <code>?</code> ,<code>[]</code></p> <ul><li><code>*</code> 通配任意多个字符</li> <li><code>?</code> 通配单个字符</li> <li><code>[]</code> 通配括号内的某1个字符</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> flushdb
+OK
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys *
+<span class="token punctuation">(</span>empty list or <span class="token builtin class-name">set</span><span class="token punctuation">)</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> mset one <span class="token number">1</span> two <span class="token number">2</span> three <span class="token number">3</span> four <span class="token number">4</span>
+OK
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys o*
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;one&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys *o
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;two&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys ???
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;one&quot;</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;two&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys on?
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;one&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> <span class="token builtin class-name">set</span> ons <span class="token function">yes</span>
+OK
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> keys on<span class="token punctuation">[</span>eaw<span class="token punctuation">]</span>
+<span class="token number">1</span><span class="token punctuation">)</span><span class="token string">&quot;one&quot;</span>
+</code></pre></div><h2 id="字符串类型的相关命令"><a href="#字符串类型的相关命令" aria-hidden="true" class="header-anchor">#</a> 字符串类型的相关命令</h2> <blockquote><p><code>set</code>设置键值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>set key value
+</code></pre></div><blockquote><p><code>mset</code>设置多个键值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>mset key1 val1 key2 val2
+</code></pre></div><blockquote><p><code>get</code>获取键值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>get key
+</code></pre></div><blockquote><p><code>mget</code>获取多个键值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>mget key1 key2
+</code></pre></div><blockquote><p><code>append</code>追加字符</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>append key value
+
+把value追加到key的原值上
+</code></pre></div><blockquote><p><code>getrange</code>获取字符里一个范围的值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>getrange key start stop
+
+获取字符串中 [start, stop]范围的值
+对于字符串的下标,左数从0开始,右数从-1开始
+
+注意: 
+1: start&gt;=length, 则返回空字符串
+2: stop&gt;=length,则截取至字符结尾
+3: 如果start 所处位置在stop右边, 返回空字符串
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> <span class="token builtin class-name">set</span> title <span class="token string">'chinese'</span>
+OK
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> getrange title <span class="token number">0</span> <span class="token number">3</span>
+<span class="token string">&quot;chin&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> getrange title <span class="token number">1</span> -2
+<span class="token string">&quot;hines&quot;</span>
+</code></pre></div><blockquote><p><code>getset</code>返回旧值并设置新值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>getset key newvalue
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> <span class="token builtin class-name">set</span> cnt <span class="token number">0</span>
+OK
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> getset cnt <span class="token number">1</span>
+<span class="token string">&quot;0&quot;</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> getset cnt <span class="token number">2</span>
+<span class="token string">&quot;1&quot;</span>
+</code></pre></div><blockquote><p><code>incr/decr</code>给键值加/减一</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>incr/decr key
+
+指定的key的值加/减1,并返回加/减1后的值
+</code></pre></div><blockquote><p><code>incrby/decrby</code>给键值值加/减</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>incrby key number
+
+指定的key的值加/减number,并返回加/减number后的值
+</code></pre></div><h2 id="集合set的相关命令"><a href="#集合set的相关命令" aria-hidden="true" class="header-anchor">#</a> 集合set的相关命令</h2> <p>集合的性质: <code>唯一性</code>,<code>无序性</code>,<code>确定性</code></p> <div class="tip custom-block"><p class="custom-block-title">注:</p> <p>在<code>string</code>和<code>link</code>的结构中,可以通过<code>range</code>来访问<code>string</code>中的某几个字符或某几个元素,但因为集合的无序性,无法通过下标或范围来访问部分元素.</p></div> <blockquote><p><code>sadd</code>往集合key中增加元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>sadd key value1 value2
+</code></pre></div><blockquote><p><code>srandmember</code>返回集合中随机的1个元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>srandmember key
+</code></pre></div><blockquote><p><code>smembers</code>返回集合中所有元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>smembers key
+</code></pre></div><blockquote><p><code>spop</code>随机返回并删除集合中key中1个元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>spop key
+</code></pre></div><blockquote><p><code>sismember</code>判断value是否在key集合中</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>sismember key value
+
+是返回1,否返回0
+</code></pre></div><blockquote><p><code>scard</code>返回集合中元素的个数</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>scard key
+</code></pre></div><blockquote><p><code>sinter</code>返回多个集合的交集</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>sinter key1 key2 key3
+</code></pre></div><blockquote><p><code>sinterstore</code>返回多个集合的交集并赋给一个集合</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>sinterstore dest key1 key2 key3
+
+交集赋值到dest中
+</code></pre></div><h2 id="有序集合order-set的相关命令"><a href="#有序集合order-set的相关命令" aria-hidden="true" class="header-anchor">#</a> 有序集合order set的相关命令</h2> <blockquote><p><code>zadd</code>添加元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zadd key score1 value1 score2 value2 ..
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> zadd stu <span class="token number">18</span> lily <span class="token number">19</span> hmm <span class="token number">20</span> lilei <span class="token number">21</span> lilei
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">3</span>
+</code></pre></div><blockquote><p><code>zrem</code>删除集合中的元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zrem key value1 value2 ..
+</code></pre></div><blockquote><p><code>zrange/zrevrange</code>返回范围内各元素(升序/降序)</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zrange/zrevrange key start stop [WITHSCORES]
+
+把集合排序后,返回名次[start,stop]的元素
+withscores是把score也打印出来
+</code></pre></div><blockquote><p><code>zremrangebyscore</code>按score来删除元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zremrangebyscore key min max
+
+删除score在[min,max]之间的元素
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> zadd <span class="token builtin class-name">test</span> <span class="token number">1</span> first <span class="token number">2</span> second <span class="token number">3</span> third
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">3</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> zremrangebyscore <span class="token builtin class-name">test</span> <span class="token number">1</span> <span class="token number">1</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZRANGE <span class="token builtin class-name">test</span> <span class="token number">0</span> -1 withscores
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;second&quot;</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;2&quot;</span>
+<span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">&quot;third&quot;</span>
+<span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">&quot;3&quot;</span>
+</code></pre></div><blockquote><p><code>zremrangebyrank</code>按rank来删除元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zremrangebyrank key min max
+</code></pre></div><blockquote><p><code>zrank/zrevrank</code>查询member的排名(升序/降序)</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zrank/zrevrank key member
+</code></pre></div><blockquote><p><code>zcard</code>返回元素个数</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zcard key
+</code></pre></div><blockquote><p><code>zinterstore</code>求一个或多个有序集的交集并赋给一个有序集</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>zinterstore dest numkeys key [key ...]
+
+scores会相加合并
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 有序集 mid_test</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD mid_test <span class="token number">70</span> <span class="token string">&quot;Li Lei&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD mid_test <span class="token number">70</span> <span class="token string">&quot;Han Meimei&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD mid_test <span class="token number">99.5</span> <span class="token string">&quot;Tom&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+
+<span class="token comment"># 另一个有序集 fin_test</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD fin_test <span class="token number">88</span> <span class="token string">&quot;Li Lei&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD fin_test <span class="token number">75</span> <span class="token string">&quot;Han Meimei&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZADD fin_test <span class="token number">99.5</span> <span class="token string">&quot;Tom&quot;</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+
+<span class="token comment"># 交集</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZINTERSTORE sum_point <span class="token number">2</span> mid_test fin_test
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">3</span>
+
+<span class="token comment"># 显示有序集内所有成员及其分数值</span>
+redis <span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> ZRANGE sum_point <span class="token number">0</span> -1 WITHSCORES     
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;Han Meimei&quot;</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;145&quot;</span>
+<span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">&quot;Li Lei&quot;</span>
+<span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">&quot;158&quot;</span>
+<span class="token number">5</span><span class="token punctuation">)</span> <span class="token string">&quot;Tom&quot;</span>
+<span class="token number">6</span><span class="token punctuation">)</span> <span class="token string">&quot;199&quot;</span>
+</code></pre></div><h2 id="链表list结构的相关命令"><a href="#链表list结构的相关命令" aria-hidden="true" class="header-anchor">#</a> 链表list结构的相关命令</h2> <blockquote><p><code>lpush</code>插入值到链表头部</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>lpush key value
+</code></pre></div><blockquote><p><code>rpush</code>插入值到链表尾部</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>rpush key value
+</code></pre></div><blockquote><p><code>rpop</code>返回并删除尾部元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>rpop key
+</code></pre></div><blockquote><p><code>lpop</code>返回并删除头部元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>lpop key
+</code></pre></div><blockquote><p><code>lrange</code>返回列表中指定区间内的元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>lrange key start stop
+
+负数下标 -1表示列表的最后一个元素,-2表示倒数第二个元素
+</code></pre></div><blockquote><p><code>lrem</code>移除列表中与参数value相等的元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>lrem key count value
+
+count的值可以是以下几种：
+count &gt; 0 : 从表头开始向表尾搜索，移除与 value 相等的元素，数量为 count。
+count &lt; 0 : 从表尾开始向表头搜索，移除与 value 相等的元素，数量为 count 的绝对值。
+count = 0 : 移除表中所有与 value 相等的值。
+</code></pre></div><blockquote><p><code>ltrim</code>截取链表</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>ltrim key start stop
+
+截取[start,stop]一段，并重新赋值给key
+</code></pre></div><blockquote><p><code>lindex</code>返回相应下标的元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>lindex key index
+</code></pre></div><blockquote><p><code>llen</code>返回链表的元素个数</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>llen key
+</code></pre></div><blockquote><p><code>linsert</code>在某元素前后插入值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>linsert key after/before search value
+</code></pre></div><h2 id="哈希hash结构的相关命令"><a href="#哈希hash结构的相关命令" aria-hidden="true" class="header-anchor">#</a> 哈希hash结构的相关命令</h2> <blockquote><p><code>hset</code>把key中filed域的值设为value</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hset key field value
+
+如果key不存在，一个新的哈希表被创建并进行HSET操作。
+如果域field已经存在于哈希表中，旧值将被覆盖。
+</code></pre></div><blockquote><p><code>hmset</code>设置多个域与值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hmset key field1 value1 [field2 value2 ....]
+</code></pre></div><blockquote><p><code>hget</code>返回key中field域的值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hget key field
+</code></pre></div><blockquote><p><code>hmget</code>返回多个key中field域的值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hmget key field1 field2 ....
+</code></pre></div><blockquote><p><code>hdel</code>删除key中field域</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hdel key field
+</code></pre></div><blockquote><p><code>hlen</code>返回key中元素的数量</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hlen key
+</code></pre></div><blockquote><p><code>hexists</code>判断key中有没有field域</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hexists key field
+</code></pre></div><blockquote><p><code>hinrby</code>将field域的值增长整型值value</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hinrby key field value
+</code></pre></div><blockquote><p><code>hkeys</code>返回key中所有的field</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>hkeys key
+</code></pre></div><blockquote><p><code>kvals</code>返回key中所有的value</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>kvals key
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>mysql -u用户名 -p密码 表名称  --default-character-set<span class="token operator">=</span>utf8 --skip-column-names --raw <span class="token operator">&lt;</span> /usr/local/redis/data.sql <span class="token operator">|</span> /usr/local/redis/bin/redis-cli -p <span class="token number">6379</span> --pipe
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/skill/JavaScript/" class="prev">
+          JavaScript
+        </a></span> <span class="next"><a href="/skill/mysql/">
+          MySQL
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7658f378.js" defer></script><script src="/assets/js/2.df635d3c.js" defer></script><script src="/assets/js/14.4d2275f7.js" defer></script>
+  </body>
+</html>
